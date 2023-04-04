@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# 101-rectangle.py by Lawrence Ikhidero
+# 101-nqueens.py by Lawrence Ikhidero
 """
 nqueens backtracking program to print the coordinates of n queens
 on an nxn grid such that they are all in non-attacking positions
