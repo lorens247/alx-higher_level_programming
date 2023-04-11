@@ -20,20 +20,9 @@ def add_integer(a, b=98):
     Returns:
         int: The sum of a and b, casted to an integer.
     """
-    if type(a) in [int, float]:
-        try:
-            a = int(a)
-        except:
-            raise TypeError('a must be an integer')
-    else:
-        raise TypeError('a must be an integer')
+    if not isinstance(a, (int, float)):
+        raise TypeError('a must be an integer or float')
+    if not isinstance(b, (int, float)):
+        raise TypeError('b must be an integer or float')
 
-    if type(b) in [int, float]:
-        try:
-            b = int(b)
-        except:
-            raise TypeError('b must be an integer')
-    else:
-        raise TypeError('b must be an integer')
-
-    return a + b
+    return int(a) + int(b)
